@@ -14,7 +14,7 @@ const heavyStuff = (iterationNumber = 100) => {
 
 export const MemoHook = () => {
 
-    const { counter, increment } = useCounter(4000);
+    const { counter, increment } = useCounter(20);
     const [show, setShow] = useState(true);
 
     const memorizedValue = useMemo(() => heavyStuff(counter), [counter])
